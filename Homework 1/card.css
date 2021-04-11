@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card {
+    display: inline-block;
+    box-shadow: 4px 8px 8px silver;
+    width: 300px;
+    border-radius: 5px;
+    margin: 5px;
+    color: white;
+    background-color: salmon;
+}
+.card img {
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+.contanier {
+    text-align: center;
+    padding: 20px;
+}
+.contanier h4 {
+    margin-bottom: 8px;
+}
+.contanier p {
+    margin-bottom: 12px;
+}
