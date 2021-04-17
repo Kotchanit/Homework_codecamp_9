@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Helvetica, sans-serif;
+        }
+
+        .container {
+            height: 100vh;
+            padding: 10vh;
+            background-color:#eeeeee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            margin-left: 225px;
+            margin-right: 50px;
+            margin-bottom: 150px;
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+        }
+
+        h1 {
+            font-size: 4.5em;
+            color: #4881fc;
+        }
+
+        .logo p {
+            font-size: 2.5em;
+        }
+
+        .box {
+            margin-right: 225px;
+            margin-left: 50px;
+        }
+
+        .input-box {
+            padding: 15px 0;
+            width: 550px;
+            height: 500px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 5px 10px 18px #ccc;
+            border-radius: 10px;
+        }
+
+        input[type=text] {
+            display: inline-block;
+            height: 70px;
+            width: 90%;
+            margin: 10px 0;
+            padding-left: 22px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            font-size: 1.5em;
+        }
+
+        input[type=text]:focus {
+            border: 1px solid #4881fc;
+            outline: none;
+            box-shadow: 2px 2px 2px #ccc;
+        }
+
+        input[type=button] {
+            height: 70px;
+            width: 90%;
+            margin: 8px 0;
+            border: none;
+            border-radius: 10px;
+            background-color:#4881fc;
+            font-size: 1.5em;
+            color: white;
+            outline: none;
+        }
+
+        input[type=button]:hover {
+            background-color: rgba(0, 96, 221, 0.882);
+            cursor: pointer;
+        }
+
+        .forget-password {
+            display: inline-block;
+            margin: 20px 0;
+            text-decoration: none;
+            color: #4881fc;
+            font-size: 1.5em;
+        }
+
+        .forget-password:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            width: 90%;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+        }
+
+        .register {
+            display: flex;
+            margin: 30px auto;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            background-color: rgb(13, 184, 7);
+            width: 40% ;
+            height: 65px;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.5em;
+        }
+
+        .register:hover {
+           background-color: rgb(5, 163, 0);
+        }
+
+        ::placeholder {
+            color: rgb(158, 158, 158);
+        }
+
+        .box p {
+            margin: 20px 0;
+            text-align: center;
+            color:black;
+            font-size: 1.2em;
+        }
+
+        .box p a {
+            color:black;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+
+        .box p a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            height: 25vh;
+            background-color:#ffffff;
+        }
+
+        .language-box {
+            margin: 25px 300px;
+            color: rgb(143, 140, 140);
+            font-size: 1.2em;
+            
+        }
+
+        .language-box a {
+            display: inline-block;
+            margin: 3px;
+            text-decoration: none;
+            color: rgb(143, 140, 140);
+            font-size: 1em;
+        }
+
+        .language-box button {
+            width: 20px;
+        }
+
+        .language-box a:hover {
+            text-decoration: underline;
+        }
+
+        .language-box button:hover {
+            cursor: pointer;
+        }
+
+        .language-box hr {
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        .language-box p {
+            margin: 30px 0;
+        }
+        
+        @media (max-width:900px) {
+            .container {
+                flex-flow: column;
+            }
+
+            .logo {
+                text-align: center;
+                align-items: center;
+                flex-flow: column;
+                margin: 0 0 50px 0;
+            }
+
+            .logo p {
+                font-size: 2em;
+            }
+
+            .box {
+                margin: 0;
+            }
+       
+            .language-box  {
+                margin: 2vh 0;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>facebook</h1>
+            <p>Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ</p>
+        </div>
+        <div class="box">
+            <div class="input-box">
+                <form action="">
+                    <input type="text" placeholder="อีเมล์หรือหมายเลขโทรศัพท์มือถือ">
+                    <br>
+                    <input type="text" placeholder="รหัสผ่าน">
+                    <br>
+                    <input type="button" value="เข้าสู่ระบบ">
+                </form>
+                <a href="#" class="forget-password">ลืมรหัสผ่านใช่หรือไม่</a>
+                <hr>
+                <a href="#" class="register">สร้างบัญชีใหม่</a>
+            </div>
+            <p><a href="#">สร้างเพจ</a>สำหรับบุคคลมีชื่อเสียง วงดนตรี หรือธุรกิจ</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="language-box">
+            <a href="#">ภาษาไทย</a>
+            <a href="#">English (UK)</a>
+            <a href="#">本語</a>
+            <a href="#">中文(简体)</a>
+            <a href="#">Tiếng Việt</a>
+            <a href="#">Français (France)</a>
+            <a href="#">Deutsch</a>
+            <a href="#">Русский</a>
+            <a href="#">Español</a>
+            <a href="#">Português (Brasil)</a>
+            <a href="#">Italiano</a>
+            <button>+</button>
+            <hr>
+            <a href="#">สมัคร</a>
+            <a href="#">เข้าสู่ระบบ</a>
+            <a href="#">Messenger
+            <a href="#">Facebook Lite</a>
+            <a href="#">Watch</a>
+            <a href="#">ผู้คน</a>
+            <a href="#">เพจ  </a> 
+            <a href="#">หมวดหมู่เพจ</a>
+            <a href="#">สถานที่</a>
+            <a href="#">เกม</a>
+            <a href="#">ตำแหน่งที่ตั้ง</a>
+            <a href="#">Marketplace</a>
+            <a href="#">Facebook Pay</a>
+            <a href="#">กลุ่ม</a>
+            <a href="#">งาน </a>  
+            <a href="#">Oculus</a>
+            <a href="#">เกี่ยวกับ</a>
+            <a href="#">สร้างโฆษณา</a>
+            <a href="#">สร้างเพจ</a>
+            <a href="#">ผู้พัฒนา</a>
+            <a href="#">ร่วมงานกับ Facebook</a>
+            <a href="#">ความเป็นส่วนตัว</a>
+            <a href="#">คุกกี้  </a>
+            <a href="#">ตัวเลือกโฆษณา</a>
+            <a href="#">เงื่อนไข</a>
+            <a href="#">ความช่วยเหลือการตั้งค่า</a>
+            <P>  Facebook © 2021</P>
+        </div>
+    </div>
+</body>
+</html>
